@@ -8,4 +8,4 @@ add_library(${PROJECT_NAME} STATIC
     src/dipc.cpp
     )
 
-target_include_directories(${PROJECT_NAME} PRIVATE include)
+target_include_directories(${PROJECT_NAME} PUBLIC include)

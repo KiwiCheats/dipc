@@ -60,7 +60,7 @@ namespace dipc {
     }
 
     // RGBA only
-    void commit_frame(uint8_t* mapping, uint8_t* frame, size_t width, size_t height) {
+    void commit_frame(uint8_t* mapping, const uint8_t* frame, size_t width, size_t height) {
         auto header = (dipc_header*) mapping;
 
         const size_t size = DIPC_FRAMEBUFFER_SIZE(width, height);

@@ -30,7 +30,7 @@ namespace dipc {
     bool connect(uint32_t pid, connection& connection);
     void disconnect(const connection& connection);
 
-    void commit_frame(uint8_t* mapping, uint8_t* frame, size_t width, size_t height);
+    void commit_frame(uint8_t* mapping, const uint8_t* frame, size_t width, size_t height);
 }
 
 #endif
