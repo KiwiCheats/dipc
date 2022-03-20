@@ -56,7 +56,7 @@ namespace dipc {
 
     void disconnect(const connection& connection) {
         UnmapViewOfFile(connection.mapping);
-        CloseHandle(connection.mapping);
+        CloseHandle(connection.handle);
     }
 
     // RGBA only
